@@ -17,7 +17,6 @@ A simple and elegant mobile application for tracking mantra repetitions. Built w
 ![Target Reached Alert](https://github.com/user-attachments/assets/ef995ebb-eaf4-4c70-9f49-60ad3d1591e9)
 
 
-*Note: Replace the placeholder links above with actual screenshots after installing and running the app.*
 
 ## Installation
 
