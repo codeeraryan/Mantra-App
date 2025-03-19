@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import Typography from '../../library/Typography';
 
 const ControlButtons = ({ onSetTarget, onReset }) => {
   return (
@@ -8,14 +9,14 @@ const ControlButtons = ({ onSetTarget, onReset }) => {
         style={styles.controlButton} 
         onPress={onSetTarget}
       >
-        <Text style={styles.controlButtonText}>Set Target</Text>
+        <Typography style={styles.controlButtonText}>Set Target</Typography>
       </TouchableOpacity>
       
       <TouchableOpacity 
         style={[styles.controlButton, styles.resetButton]} 
         onPress={onReset}
       >
-        <Text style={styles.controlButtonText}>Reset</Text>
+        <Typography style={styles.controlButtonText}>Reset</Typography>
       </TouchableOpacity>
     </View>
   );

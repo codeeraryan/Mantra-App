@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { StyleSheet, TouchableOpacity } from 'react-native';
+import Typography from '../../library/Typography';
 
 const CounterButton = ({ onPress }) => {
   return (
@@ -8,7 +9,7 @@ const CounterButton = ({ onPress }) => {
       onPress={onPress}
       activeOpacity={0.7}
     >
-      <Text style={styles.counterButtonText}>+</Text>
+      <Typography style={styles.counterButtonText}>+</Typography>
     </TouchableOpacity>
   );
 };

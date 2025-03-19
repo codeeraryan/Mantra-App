@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, TextInput, Modal } from 'react-native';
+import { StyleSheet, View, TouchableOpacity, TextInput, Modal } from 'react-native';
+import Typography from '../../library/Typography';
 
 const TargetModal = ({ visible, tempTarget, onChangeTempTarget, onCancel, onSave }) => {
   return (
@@ -11,7 +12,7 @@ const TargetModal = ({ visible, tempTarget, onChangeTempTarget, onCancel, onSave
     >
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
-          <Text style={styles.modalTitle}>Set Target</Text>
+          <Typography style={styles.modalTitle}>Set Target</Typography>
           <TextInput
             style={styles.input}
             keyboardType="numeric"
@@ -24,13 +25,13 @@ const TargetModal = ({ visible, tempTarget, onChangeTempTarget, onCancel, onSave
               style={[styles.modalButton, styles.cancelButton]} 
               onPress={onCancel}
             >
-              <Text style={styles.modalButtonText}>Cancel</Text>
+              <Typography style={styles.modalButtonText}>Cancel</Typography>
             </TouchableOpacity>
             <TouchableOpacity 
               style={[styles.modalButton, styles.saveButton]} 
               onPress={onSave}
             >
-              <Text style={styles.modalButtonText}>Save</Text>
+              <Typography style={styles.modalButtonText}>Save</Typography>
             </TouchableOpacity>
           </View>
         </View>

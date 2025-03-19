@@ -1,11 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Typography from '../../library/Typography';
 
 const CounterDisplay = ({ count, target }) => {
   return (
     <View style={styles.counterContainer}>
-      <Text style={styles.counterText}>{count}</Text>
-      <Text style={styles.targetText}>Target: {target}</Text>
+      <Typography style={styles.counterText}>{count}</Typography>
+      <Typography style={styles.targetText}>Target: {target}</Typography>
       <View style={styles.progressContainer}>
         <View 
           style={[

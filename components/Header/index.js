@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Typography from '../../library/Typography';
 
 const Header = () => {
   return (
     <View style={styles.headerContainer}>
-      <Text style={styles.title}>Mantra Counter</Text>
+      <Typography style={styles.title}>Mantra Counter</Typography>
     </View>
   );
 };
